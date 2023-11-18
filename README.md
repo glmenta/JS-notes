@@ -37,7 +37,19 @@ foo()
 
 recursion => keeps calling foo() without a base case to stop it; this is a example of stack overflow.
 
-JS is single threaded!
+JS is single threaded language that can be non-blocking
+
+Asynchronous => useful if a task in the middle of a sequence can be too long, we can run another call
+
+console.log('1')
+setTimeout(() => {
+  console.log('2')
+}, 2000)
+console.log('3')
+
+In the terminal this would read: 1 -> 3 -> 2
+
+callstack -> web api -> callback queue -> event loop
 ```
 
 
