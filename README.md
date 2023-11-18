@@ -40,6 +40,7 @@ recursion => keeps calling foo() without a base case to stop it; this is a examp
 JS is single threaded language that can be non-blocking
 
 Asynchronous => useful if a task in the middle of a sequence can be too long, we can run another call
+=> similar to texting a person; they will come back to you with a message eventually when they have the time so you can do something else
 
 console.log('1')
 setTimeout(() => {
@@ -50,6 +51,8 @@ console.log('3')
 In the terminal this would read: 1 -> 3 -> 2
 
 callstack -> web api -> callback queue -> event loop
+
+
 ```
 
 
